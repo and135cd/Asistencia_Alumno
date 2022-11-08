@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+### 
+GET http://localhost:5000/users/1
+
+### 
+POST http://localhost:5000/users 
+Content-Type: application/json
+
+{
+    "nombre": "Luis Pedro", 
+    "hora_entrada": "8:10", 
+    "hora_salida": "1:30",
+    "fecha": "2022/03/02"
+}
+
+###
+PATCH http://localhost:5000/users/1 
+Content-Type: application/json
+
+{
+    "nombre": "Juan Mariano", 
+    "hora_entrada": "9:10", 
+    "hora_salida": "1:00",
+    "fecha": "2022/03/02"
+}
+
+###
+DELETE http://localhost:5000/users/3 
